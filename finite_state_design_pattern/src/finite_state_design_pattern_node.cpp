@@ -1,19 +1,16 @@
 #include <ros/ros.h>
-#include "light/Light.hpp"
 
 int main(int argc, char ** argv)
 {
-    ros::init(argc, argv, "state_transition_table_node");
+    ros::init(argc, argv, "finite_state_design_pattern_node");
     ros::NodeHandle nh;
     ros::Rate r(1);
-    Light lightfsm;
-    std::cout << "Hello FSM \n";
+    std::cout << "Hello finite state design pattern node \n";
 
     while(ros::ok())
     {
         r.sleep();
         ros::spinOnce();
-        lightfsm.toggle();
     }
 
     return 0;
