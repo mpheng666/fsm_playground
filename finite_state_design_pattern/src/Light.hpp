@@ -1,17 +1,11 @@
-// #include "LightState.hpp"
+#ifndef _LIGHT_HPP_
+#define _LIGHT_HPP_
+
+#include "LightState.hpp"
+#include <iostream>
 
 // Forward declaration to resolve circular dependency/include
-class Light;
 class LightState;
-
-class LightState
-{
-public:
-	virtual void enter(Light* light) = 0;
-	virtual void toggle(Light* light) = 0;
-	virtual void exit(Light* light) = 0;
-	virtual ~LightState() {}
-};
 
 class Light
 {
@@ -25,3 +19,5 @@ public:
 private:
 	LightState* currentState;
 };
+
+#endif

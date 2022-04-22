@@ -1,3 +1,6 @@
+#ifndef _CONCRETE_LIGHT_STATES_HPP_
+#define _CONCRETE_LIGHT_STATES_HPP_
+
 #include "LightState.hpp"
 #include "Light.hpp"
 
@@ -56,3 +59,5 @@ private:
 	HighIntensity(const HighIntensity& other);
 	HighIntensity& operator=(const HighIntensity& other);
 };
+
+#endif

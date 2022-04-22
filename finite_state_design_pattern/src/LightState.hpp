@@ -1,6 +1,9 @@
+#ifndef _LIGHT_STATE_HPP_
+#define _LIGHT_STATE_HPP_
+
 #include "Light.hpp"
 
-// Forward declaration to resolve circular dependency/include
+// // Forward declaration to resolve circular dependency/include
 class Light;
 
 class LightState
@@ -11,3 +14,5 @@ public:
 	virtual void exit(Light* light) = 0;
 	virtual ~LightState() {}
 };
+
+#endif
