@@ -2,6 +2,7 @@
 #define _LIGHT_HPP_
 
 #include "LightState.hpp"
+
 #include <iostream>
 
 // Forward declaration to resolve circular dependency/include
